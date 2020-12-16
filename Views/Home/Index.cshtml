@@ -22,11 +22,13 @@
 
         }else{
             <p class="text-warning">solicitudes registradas previamente en los últimos 7 días</p>
+            <div class="row">
             @foreach (var productos in Model)
             {
                                 
-                    
-                    <div class="col-md-4">
+                <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="">
                         <ul class="list-group ">
                             <li class="list-group-item list-group-item-light">NOMBRE: @productos.Nombre</li>
                             <li class="list-group-item list-group-item-light">Descripción: @productos.descripcion</li>
@@ -38,10 +40,13 @@
                         </ul>
                             
                 </div>
-                <br>
+                </div>
+                </div>
+                
                   
                 
             }
+            </div>
         }
         
 
