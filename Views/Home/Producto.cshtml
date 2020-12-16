@@ -1,0 +1,64 @@
+@model Producto
+
+@{
+    ViewData["Title"] = "Registro Solicitud";
+}
+
+<div class="col-6">
+    <div class="text-left">
+        <h1 class="">Registrar una nueva solicitud </h1>
+    </div>
+</div>
+
+<form asp-action="Producto" class="form-container" method="POST">
+    <div asp-validation-summary="All"></div>
+
+    <div class="col-6">
+
+        <div class="form-group">
+            <label asp-for="Nombre"></label>
+            <input asp-for="Nombre" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="url"></label>
+            <input type="file" asp-for="url" class="form-control" required/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="descripcion"></label>
+            <input asp-for="descripcion" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="precio"></label>
+            <input asp-for="precio" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="celular"></label>
+            <input asp-for="celular" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="lugar"></label>
+            <input asp-for="lugar" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="user"></label>
+            <input asp-for="user" class="form-control" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input class="form-control" type="date" value="15/12/2020" placeholder="15/01/1998" asp-for="fecha">
+        </div>
+
+
+        <button class="btn btn-block btn-info">Registrar</button>
+
+    </div>
+
+</form>

@@ -1,0 +1,26 @@
+btn-info {
+    color: #fff;
+    background-color: #009efb;
+    border-color: #2671a0;
+   
+}
+.busco {
+    font-family: Rubik,sans-serif;
+    font-weight: bold;
+    
+}
+.menu{
+    background: linear-gradient(to right,#01c0c8 0,#12649b 100%);
+    /*background-color: #16232b;*/
+
+}
+.menu a:hover {
+    color: #01c0c8;
+}
+.base{
+    /*background: linear-gradient(to right,#f6fcfc 0,#12649b 100%);*/
+    background: linear-gradient(to right,#f6fcfc 0,#f6fcfc 100%);
+}
+.footer{
+    background-color: #0a0f13;
+}
